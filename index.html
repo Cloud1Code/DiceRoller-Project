@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    
+        <body>
+            <select name="dice" id="dice" py-change="Select_face_option">
+                <option value="2">d2</option>
+                <option value="4">d4</option>
+                <option value="6">d6</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="20">d20</option>
+            </select>
+            <button type="button"py-click="roll_all_dice">Print some nonsense</button>
+        </body>
+        <div id="roll histroy">hsjwhagkdygleufoeif</div>
+        <button type="button"py-click="clear history">roll dive again</button>
+
+        <!-- loading screen JavaScript closes the loading dialog when python is ready -->
+        <script type="module">
+            const loading = document.getElementById("loading")
+            addEventListener("py:ready", () => loading.close())
+            loading.showModal()
+        </script>
+
+
+        <!-- webpage title (shows in browser tab) -->
+        <title>Pyscript Web Dice Roller</title>
+    </head>
+
+    <body>
+        <dialog id="loading"><h1>Loading python environment...</h1></dialog>
+        <!-- Start of your code -->
+
+
+
+
+
+
+
+
+
+
+        <!-- End of your code -->
+        <script type="py" src="main.py" config="./pyscript.json"></script>
+    </body>
+</html>
