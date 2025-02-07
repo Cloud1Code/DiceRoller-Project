@@ -1,6 +1,60 @@
-<!-- PyScript CSS -->
-        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-        <link rel="stylesheet" href="./style.css">
+h1#main-heading {
+    color: red;
+    font-family: "High Tower Text";
+    font-size: 40pt;
+    background-color: transparent;
+}
+div#roll-history
+{
+    color: blue;
+    font-size: 20pt;
+}
+label
+{
+    color: darkmagenta;
+    font-size: 15pt;
+    text-align: left;
+}
+input#dice_number
+{
+    Color:darkslategray;
+    font-size:15pt ;
+    ;
 
-        <!-- This script tag bootstraps PyScript -->
-        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+}
+button
+{
+    color:chocolate;
+    font-size: 15pt;
+    text-align: center;
+
+}
+select#dice
+{
+    Color:brown;
+    font-size:15pt ;
+
+}
+
+h2
+{
+    color: crimson;
+    font-size: 15pt;
+
+}
+
+#face_number
+{
+    color:deeppink;
+    font-size:15pt;
+}
+p
+{
+    font-size: 20pt;
+
+}
+
+#Results-Align
+{
+    text-align:center;
+}

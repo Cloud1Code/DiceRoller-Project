@@ -1,25 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
-        
         <!-- Recommended meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    
-        <body>
-            <select name="dice" id="dice" py-change="Select_face_option">
-                <option value="2">d2</option>
-                <option value="4">d4</option>
-                <option value="6">d6</option>
-                <option value="8">d8</option>
-                <option value="10">d10</option>
-                <option value="20">d20</option>
-            </select>
-            <button type="button"py-click="roll_all_dice">Print some nonsense</button>
-        </body>
-        <div id="roll histroy">hsjwhagkdygleufoeif</div>
-        <button type="button"py-click="clear history">roll dive again</button>
+        <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
         <!-- loading screen JavaScript closes the loading dialog when python is ready -->
         <script type="module">
@@ -37,15 +28,35 @@
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
 
+        <h1 id="main-heading">Roller Dice Game</h1>
+             <p>Hello! there,I'm Priyanka,I have created a roller dice game by using my programming knowledge. Let's play. .</p>
+        <div>
+            <label for="dice" id="face_number">Number of Faces</label>
+            <select name="dice" id="dice" py-change="select_face_option">
+                <option value="2">Coin 📀</option>
+                <option value="4">d4</option>
+                <option value="6">d6 🎲</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="20">d20</option>
+            </select>
 
+            <label for="dice_number">Number of Dice</label>
+            <input type="number" id="dice_number" min="1" value="1">
 
+            <button type="button" py-click="roll_all_dice">roll dice</button>
+            <button type="button"py-click="clear_history">clear</button>
+        </div>
 
+        <div id="Results-Align">
+           <div><h2> Results</h2></div>
 
+            <div id="roll-history"></div>
+        </div>
 
+        <br/>
 
-
-
-
+           
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>
     </body>
